@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap");
+
+:root
+{
+    --fire: #fc7981;
+    --water: #118dc1;
+    --back: rgba(150, 154, 153, 0.1);
+    --default: #fccd7b;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--fire);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    list-style: none;
+    appearance: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html
+{
+    font-size: 14px;
+}
+body
+{
+    width: 100vw;
+    height: 100vw;
+    font-family: poppins, sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    overflow-x: hidden;
+    background: var(--back);
+}
+a{
+    width: 100%;
+    color: var(--water);
+    }
+h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+    }
+h2{
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: var(--default);
+}
+h3{
+    font-weight: 800;
+    font-size: 0.87rem;
+}
+h4{
+    font-weight: 800;
+    font-size: 0.8rem;
+}
+h5
+{
+    font-size: 0.77rem;
+}
+small{
+    font-size: 0.75rem;
+}
+.text-muted{
+    color: darkslategray;
+}
+.danger{
+    color: var(--fire);
+}
+.water
+{
+    color: var(--fire);
+}
+
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
+
+aside{
+    height: 100vh;
+}
+aside .top{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+aside .logo{
+    display: flex;
+    gap: 0.8rem;
+    }
+aside .logo img{
+    width: 2rem;
+    height: 2rem;
+/*=============== SIDEBAR=============*/
+}
+aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
+
+aside h3{
+    font-weight: 500;
+}
+aside .sidebar a{
+    display: flex;
+    margin-left: 2rem;
+    position: relative;
+    align-items: center;
+    height: 3.7em;
+    transition: all 300ms ease;
+}
+aside .sidebar a span{
+    font-size: 1.6rem;
+    transition: all 300ms ease;
+    margin-right: 0.7rem;
+}
+aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+aside .sidebar a:active{
+    background: var(--fire);
+    color: var(--default);
+    margin-left: 0;
+}
+aside .sidebar a:active:before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background: var(--default);
+}
+aside .sidebar a:active span{
+    color: var(--default);
+    margin-left: calc(1rem - 3px);
+}
+aside .sidebar a:hover{
+    color: var(--default);
+}
+aside .sidebar a:hover span{
+    margin-left: 1rem;
+}
+
